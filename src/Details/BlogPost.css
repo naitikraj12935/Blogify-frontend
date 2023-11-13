@@ -1,0 +1,21 @@
+/* BlogPost.css */
+
+/* Define the default styles for larger screens */
+.container {
+    margin: 50px 80px;
+  }
+  
+  /* Define styles for screens with a maximum width of 768px (smaller screens) */
+  @media screen and (max-width: 768px) {
+    .container {
+      margin: 30px 10px;
+    }
+  }
+  
+  /* Define styles for screens with a maximum width of 480px (even smaller screens) */
+  @media screen and (max-width: 480px) {
+    .container {
+      margin: 20px 10px;
+    }
+  }
+  
