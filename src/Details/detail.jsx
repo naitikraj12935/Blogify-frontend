@@ -139,7 +139,7 @@ const [postdata,setpostdata]=useState(initialpost);
           id: id,
         };
 
-        const response = await axios.get(`${API_URL}/blogify/details`, {
+        const response = await axios.get(`${API_URL}/details`, {
           params: params,
         });
 
@@ -164,7 +164,7 @@ const [postdata,setpostdata]=useState(initialpost);
         const params = {
           id: id,
         };
-        const response=await axios.get(`${API_URL}/blogify/view`,{
+        const response=await axios.get(`${API_URL}/view`,{
           params:params
         });
 
@@ -194,7 +194,7 @@ const [postdata,setpostdata]=useState(initialpost);
           Likeby: paccount.userName,
         };
   
-        const response = await axios.get(`${API_URL}/blogify/like`, {
+        const response = await axios.get(`${API_URL}/like`, {
           params: params,
         });
   
@@ -223,7 +223,7 @@ const [postdata,setpostdata]=useState(initialpost);
         Likeby: paccount.userName,
       };
 
-      const response = await axios.get(`${API_URL}/blogify/like`, {
+      const response = await axios.get(`${API_URL}/like`, {
         params: params,
       });
 
@@ -259,7 +259,7 @@ const [postdata,setpostdata]=useState(initialpost);
   const publishComment=async ()=>{
     
     try{
-      const response=await axios.post(`${API_URL}/blogify/comment`,postdata
+      const response=await axios.post(`${API_URL}/comment`,postdata
        
       )
       if(response)
@@ -290,7 +290,7 @@ const [postdata,setpostdata]=useState(initialpost);
         const params={
           id:id
         }
-          const response= await axios.get(`${API_URL}/blogify/comment`,{
+          const response= await axios.get(`${API_URL}/comment`,{
             params:params
           })
           if(response)
@@ -375,7 +375,7 @@ const deleteComment=async(id)=>{
     const params={
       id:id
     }
-     const response=await axios.delete(`${API_URL}/blogify/comment`,{
+     const response=await axios.delete(`${API_URL}/comment`,{
       params:params
      })
      if(response)

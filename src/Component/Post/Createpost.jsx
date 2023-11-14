@@ -63,7 +63,7 @@ export default function Createpost() {
               data.append('file', file);
           
               try {
-                const response = await axios.post(`${API_URL}/blogify/file/upload`, data);
+                const response = await axios.post(`${API_URL}/file/upload`, data);
                 console.log(response);
           
                 if (response.data.data && response.data.data.result && response.data.data.result.imagelink) {
@@ -98,7 +98,7 @@ export default function Createpost() {
       console.log(sessionStorage.getItem('accessToken'))
       const token=sessionStorage.getItem('accessToken')
       try{
-        const response=await axios.post(`${API_URL}/blogify/create`,postdata,{
+        const response=await axios.post(`${API_URL}/create`,postdata,{
           headers:{
             Authorization:token
           }

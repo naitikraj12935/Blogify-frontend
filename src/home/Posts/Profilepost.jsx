@@ -88,7 +88,7 @@ export default function Profilepost({ post }) {
             id:post._id,
             userName:post.userName
         }
-        const response=await axios.delete(`${API_URL}/blogify/deletepost`,{
+        const response=await axios.delete(`${API_URL}/deletepost`,{
             headers:{
                 Authorization:token
               },

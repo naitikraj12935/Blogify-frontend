@@ -65,7 +65,7 @@ export default function Updatepost() {
               data.append('file', file);
           
               try {
-                const response = await axios.post(`${API_URL}/blogify/file/upload`, data);
+                const response = await axios.post(`${API_URL}/file/upload`, data);
                 console.log(response);
           
                 if (response.data.data && response.data.data.result && response.data.data.result.imagelink) {
@@ -96,7 +96,7 @@ export default function Updatepost() {
               id: id,
             };
     
-            const response = await axios.get(`${API_URL}/blogify/details`, {
+            const response = await axios.get(`${API_URL}/details`, {
               params: params,
             });
     
@@ -129,7 +129,7 @@ export default function Updatepost() {
         const params={
             id:id
         }
-        const response=await axios.patch(`${API_URL}/blogify/update`,postdata,{
+        const response=await axios.patch(`${API_URL}/update`,postdata,{
           headers:{
             Authorization:token
           },

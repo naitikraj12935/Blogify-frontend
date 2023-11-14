@@ -91,7 +91,7 @@ const Profile = () => {
           // Define your query parameters here
           userName: paccount.userName,
         };
-        const response = await axios.get(`${API_URL}/blogify/userpost`, {
+        const response = await axios.get(`${API_URL}/userpost`, {
           params: params,
         });
 
@@ -111,7 +111,7 @@ const Profile = () => {
         const params = {
           followto: paccount.userName,
         };
-        const response = await axios.get(`${API_URL}/blogify/followers`, {
+        const response = await axios.get(`${API_URL}/followers`, {
           params: params,
         });
         if (response) {

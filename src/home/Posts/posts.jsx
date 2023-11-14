@@ -20,7 +20,7 @@ export default function Posts() {
                     // Define your query parameters here
                     category:category || ''
                   };
-                const response=await axios.get(`${API_URL}/blogify/allposts`,{
+                const response=await axios.get(`${API_URL}/allposts`,{
                     params:params
                 });
                 

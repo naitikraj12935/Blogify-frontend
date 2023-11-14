@@ -22,5 +22,5 @@ export const notificationMessages = {
   };
 
   export const SERVICE_URLS={
-    userSignup:{url:'/blogify/signup',method:'POST'}
+    userSignup:{url:'//signup',method:'POST'}
   }

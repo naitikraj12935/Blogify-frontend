@@ -82,7 +82,7 @@ const Authorprofile = () => {
         const params = {
           userName: userName,
         };
-        const response = await axios.get(`${API_URL}/blogify/userpost`, {
+        const response = await axios.get(`${API_URL}/userpost`, {
           params: params,
         });
 
@@ -102,7 +102,7 @@ const Authorprofile = () => {
         const params = {
           followto: userName,
         };
-        const response = await axios.get(`${API_URL}/blogify/followers`, {
+        const response = await axios.get(`${API_URL}/followers`, {
           params: params,
         });
         if (response) {
@@ -134,7 +134,7 @@ const Authorprofile = () => {
         followto: userName,
         followby: paccount.userName,
       };
-      const response = await axios.post(`${API_URL}/blogify/follow`, data, {
+      const response = await axios.post(`${API_URL}/follow`, data, {
         headers: {
           Authorization: token,
         },

@@ -78,7 +78,7 @@ export default function Login({isuserAuthenticated}) {
   
   const Signup = async () => {
     try {
-      const response = await fetch(`${API_URL}/blogify/signup`, {
+      const response = await fetch(`${API_URL}/signup`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -107,7 +107,7 @@ export default function Login({isuserAuthenticated}) {
 
   const loginup = async () => {
     try {
-      const response = await axios.post(`${API_URL}/blogify/login`, loginvalue);
+      const response = await axios.post(`${API_URL}/login`, loginvalue);
   
       if (response) {
         console.log(response);

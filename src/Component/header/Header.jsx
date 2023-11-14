@@ -46,7 +46,7 @@ export default function Header() {
         const params = {
           userName: paccount.userName,
         };
-        const response = await axios.get(`${API_URL}/blogify/notification`, {
+        const response = await axios.get(`${API_URL}/notification`, {
           params: params,
         });
 
