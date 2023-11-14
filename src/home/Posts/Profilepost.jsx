@@ -79,7 +79,7 @@ const EditDeleteIcons = styled(Box)`
 export default function Profilepost({ post }) {
     const nevigate=useNavigate();
   const url = post.picture ? post.picture : 'https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg';
-  const API_URL='';
+  const API_URL='https://blogingfy-7e950285c55c.herokuapp.com/';
 
   const Deletepost=async ()=>{
     try{

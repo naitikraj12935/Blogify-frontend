@@ -83,7 +83,7 @@ const Profile = () => {
   const [postdata, setpostdata] = useState([]);
   const [follower, setfollower] = useState([]);
   const [followback, setfollowback] = useState([]);
-  const API_URL='';
+  const API_URL='https://blogingfy-7e950285c55c.herokuapp.com/';
   useEffect(() => {
     const fetchdata = async () => {
       try {

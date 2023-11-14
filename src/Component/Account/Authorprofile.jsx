@@ -75,7 +75,7 @@ const Authorprofile = () => {
   const [followback, setfollowback] = useState(0);
   const [peoplefollowby,setpeoplefollowby]=useState([{}]);
   const [peoplefollowto,setpeoplefollowto]=useState([{}]);
-  const API_URL='';
+  const API_URL='https://blogingfy-7e950285c55c.herokuapp.com/';
   useEffect(() => {
     const fetchdata = async () => {
       try {

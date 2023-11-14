@@ -12,7 +12,7 @@ export default function Posts() {
     const [Posts,setposts]=useState([]);
     const [searchparams]=useSearchParams();
     let category=searchparams.get('category');
-    const API_URL='';
+    const API_URL='https://blogingfy-7e950285c55c.herokuapp.com/';
     useEffect(()=>{
          const fetchdata=async ()=>{
              try{

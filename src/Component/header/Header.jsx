@@ -39,7 +39,7 @@ export default function Header() {
   const [notifydata, setnotifydata] = useState([]);
   const { paccount } = useContext(DataContext);
   const [num,setnum]=useState(0);
-  const API_URL='';
+  const API_URL='https://blogingfy-7e950285c55c.herokuapp.com/';
   useEffect(() => {
     const fetchData = async () => {
       try {

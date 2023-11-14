@@ -6,7 +6,7 @@ import Shownotification from './Shownotification';
 export default function Notification() {
   const [notifydata, setnotifydata] = useState([]);
   const { paccount } = useContext(DataContext);
-  const API_URL='';
+  const API_URL='https://blogingfy-7e950285c55c.herokuapp.com/';
   useEffect(() => {
     const fetchData = async () => {
       try {

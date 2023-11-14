@@ -55,7 +55,7 @@ export default function Updatepost() {
         createDate:new Date()
     }
     const [postdata,setpostdata]=useState(initialpost);
-   const API_URL='';
+   const API_URL='https://blogingfy-7e950285c55c.herokuapp.com/';
     const [file,setfile]=useState('');
     useEffect(() => {
         const getdata = async () => {
